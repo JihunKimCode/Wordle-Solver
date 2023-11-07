@@ -4,6 +4,20 @@
 - **Algorithm**: We will start with using the Bayesian model but we also consider combining other algorithms if necessary
 ![image](https://github.com/JihunKimCode/Wordle-Solver/assets/112218975/9fc7ca5c-caf3-4a7e-9f6b-6802ef6a1086)
 
+# Works Flow
+## Main Goal
+1. Random guess from list (whole word list).
+2. Feedback based on the letter location (yellow, green, gray).
+3. Go back and guess with the feedback information.
+## Stretched Goal
+1. Find the best word to start.
+2. Make it in the web version.
+
+# Resources
+* Find Good Word Algorithm
+  * [Finding Good Start Word](https://youtu.be/v68zYyaEmEA?si=6YcWoP0axWr9h6b7)
+  * [Finding Good Start Word2](https://youtu.be/fRed0Xmc2Wg?si=LGqrzxLIqUL-g5h1)
+  * [Code in Github](https://github.com/3b1b/videos/tree/master/_2022/wordle)
 # Requirements + Deadlines
 - [ ]  **Presentation**: Nov 30th
   - Should be sent to Dr. Schuman by Nov 29th
