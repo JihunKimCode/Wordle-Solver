@@ -14,7 +14,7 @@
 2. Make it in the web version.
 
 # Resources
-https://github.com/3b1b/videos/tree/master/_2022/wordle
+* https://github.com/3b1b/videos/tree/master/_2022/wordle
 
 # Requirements + Deadlines
 - [ ]  **Presentation**: Nov 30th
