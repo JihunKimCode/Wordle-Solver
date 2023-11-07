@@ -15,6 +15,8 @@
 
 # Resources
 * https://github.com/3b1b/videos/tree/master/_2022/wordle
+* https://youtu.be/v68zYyaEmEA?si=6YcWoP0axWr9h6b7
+* https://youtu.be/fRed0Xmc2Wg?si=LGqrzxLIqUL-g5h1
 
 # Requirements + Deadlines
 - [ ]  **Presentation**: Nov 30th
