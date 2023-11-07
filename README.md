@@ -77,4 +77,4 @@
 * **Each member of team** should submit the same zip file
 
 ## For more information...
-[TeamProject.pdf](https://github.com/JihunKimCode/Wordle-Solver/files/13249830/TeamProject_NeuralNetworks_Part2.pdf)
+* [All PDFs](https://github.com/JihunKimCode/Wordle-Solver/tree/72fc9e32a668001543b820a388d1bec7debfc807/PDFs)
