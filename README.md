@@ -14,10 +14,10 @@
 2. Make it in the web version.
 
 # Resources
-* https://github.com/3b1b/videos/tree/master/_2022/wordle
-* https://youtu.be/v68zYyaEmEA?si=6YcWoP0axWr9h6b7
-* https://youtu.be/fRed0Xmc2Wg?si=LGqrzxLIqUL-g5h1
-
+* Find Good Word Algorithm
+  * [Finding Good Start Word](https://youtu.be/v68zYyaEmEA?si=6YcWoP0axWr9h6b7)
+  * [Finding Good Start Word2](https://youtu.be/fRed0Xmc2Wg?si=LGqrzxLIqUL-g5h1)
+  * [Code in Github](https://github.com/3b1b/videos/tree/master/_2022/wordle)
 # Requirements + Deadlines
 - [ ]  **Presentation**: Nov 30th
   - Should be sent to Dr. Schuman by Nov 29th
