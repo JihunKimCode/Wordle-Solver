@@ -10,22 +10,25 @@ def choose_random_word():
 
 # Function to evaluate a guess based on user-provided feedback
 def evaluate_guess(target_word, guess, feedback):
-    feedback_symbols = ["MISS", "MISPLACED", "EXACT"]
-    feedback_text = [feedback_symbols[int(fb)] for fb in feedback]
-    
-    feedback_result = []
-    for i, fb in enumerate(feedback_text):
-        if fb == "EXACT":
-            feedback_result.append(fb)
-        elif fb == "MISPLACED":
-            if guess[i] in target_word and target_word.count(guess[i]) > guess.count(guess[i]):
-                feedback_result.append("MISPLACED")
-            else:
-                feedback_result.append("MISS")
+    guess_copy = guess
+    feedback = []
+    remaining_secret_letters = list(target_word)
+    # First, check exact matches (greens)
+    for i, (g1, g2) in enumerate(zip(target_word, guess_copy)):
+        if g1 == g2:
+            feedback.append("🟩")
+            remaining_secret_letters.remove(g1)
+            guess_copy = guess_copy[:i] + "🟩" + guess_copy[i+1:]
         else:
-            feedback_result.append("MISS")
-    
-    return feedback_result
+            feedback.append("⬛")
+    feedback_str = "".join(feedback)
+    # Then, check letters but not in location (yellows)
+    for i, g2 in enumerate(guess_copy):
+        if g2 in remaining_secret_letters:
+            feedback_str = feedback_str[:i] + "🟨" + feedback_str[i+1:]
+            remaining_secret_letters.remove(g2)
+    feedback = feedback_str
+    return "".join(feedback)
 
 # Bayesian algorithm for word selection
 def bayesian_choose_word(possible_words, previous_guesses):
@@ -56,16 +59,24 @@ while True:
             feedback_input = input(f"Attempt {attempts}: {guess} - Enter feedback (0/1/2): ")
             feedback_input = [int(f) for f in feedback_input]
             if all(f in [0, 1, 2] for f in feedback_input) and len(feedback_input) == len(target_word):
-                feedback = feedback_input
-                break
+                for i in range(len(feedback_input)):
+                    if feedback_input[i] == 0:
+                        feedback.append("⬛")
+                    elif feedback_input[i] == 1:
+                        feedback.append("🟨")
+                    elif feedback_input[i] == 2:
+                        feedback.append("🟩")
             else:
                 print("Invalid feedback. Please provide feedback as 0, 1, or 2.")
         except ValueError:
             print("Invalid feedback. Please provide feedback as 0, 1, or 2.")
-    
+        if len(feedback) == len(feedback_input):
+            feedback = "".join(feedback)
+            break
     previous_guesses.append((guess, feedback))
-    
-    if feedback.count(2) == len(target_word):
+    print(feedback)
+
+    if feedback.count("🟩") == len(target_word):
         print(f"Congratulations! The word was '{target_word}'. It took {attempts} attempts to guess.")
         break
 
