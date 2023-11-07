@@ -6,12 +6,12 @@
 
 # Works Flow
 ## Main Goal
-1. Random guess from list (whole word list)
+1. Random guess from list (whole word list).
 2. Feedback based on the letter location (yellow, green, gray).
 3. Go back and guess with the feedback information.
 ## Stretched Goal
-1. Find the best word to start
-2. Make it in the web version
+1. Find the best word to start.
+2. Make it in the web version.
 
 # Requirements + Deadlines
 - [ ]  **Presentation**: Nov 30th
