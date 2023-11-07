@@ -13,6 +13,9 @@
 1. Find the best word to start.
 2. Make it in the web version.
 
+# Resources
+https://github.com/3b1b/videos/tree/master/_2022/wordle
+
 # Requirements + Deadlines
 - [ ]  **Presentation**: Nov 30th
   - Should be sent to Dr. Schuman by Nov 29th
