@@ -42,7 +42,6 @@ def bayesian_choose_word(possible_words, previous_guesses):
     return random.choice(best_words)
 
 # Main game loop
-target_word = choose_random_word()
 attempts = 0
 previous_guesses = []
 
@@ -58,7 +57,7 @@ while True:
         try:
             feedback_input = input(f"Attempt {attempts}: {guess} - Enter feedback (0/1/2): ")
             feedback_input = [int(f) for f in feedback_input]
-            if all(f in [0, 1, 2] for f in feedback_input) and len(feedback_input) == len(target_word):
+            if all(f in [0, 1, 2] for f in feedback_input) and len(feedback_input) == 5:
                 for i in range(len(feedback_input)):
                     if feedback_input[i] == 0:
                         feedback.append("⬛")
@@ -76,8 +75,8 @@ while True:
     previous_guesses.append((guess, feedback))
     print(feedback)
 
-    if feedback.count("🟩") == len(target_word):
-        print(f"Congratulations! The word was '{target_word}'. It took {attempts} attempts to guess.")
+    if feedback.count("🟩") == 5:
+        print(f"Congratulations! The word was '{guess}'. It took {attempts} attempts to guess.")
         break
 
 print("Game over!")
