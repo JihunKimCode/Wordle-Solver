@@ -1,6 +1,7 @@
 # Wordle Solver
-- **Training dataset**: All possible words that have 5 characters that Wordle takes (https://github.com/charlesreid1/five-letter-words/blob/master/sgb-words.txt)
-- **Testing dataset**: Previous Wordle answers (https://www.fiveforks.com/wordle/)
+- **Training dataset**: [All possible words that have 5 characters that Wordle takes](https://github.com/charlesreid1/five-letter-words/blob/master/sgb-words.txt)
+- **Training dataset2**: [We changed the training dataset into new allowed word list](https://github.com/3b1b/videos/blob/master/_2022/wordle/data/allowed_words.txt)
+- **Testing dataset**: [Previous Wordle answers](https://www.fiveforks.com/wordle/)
 - **Algorithm**: We will start with using the Bayesian model but we also consider combining other algorithms if necessary
 ![image](https://github.com/JihunKimCode/Wordle-Solver/assets/112218975/9fc7ca5c-caf3-4a7e-9f6b-6802ef6a1086)
 
