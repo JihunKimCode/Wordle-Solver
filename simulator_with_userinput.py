@@ -45,13 +45,17 @@ def bayesian_choose_word(possible_words, previous_guesses):
 attempts = 0
 previous_guesses = []
 
-print("Welcome to the Word Guessing Game!")
+print("Let's Play Wordle!")
 print("Please think of a word and provide feedback as follows:")
 print("0 for MISS, 1 for MISPLACED, and 2 for EXACT.")
 
 while True:
     attempts += 1
     guess = bayesian_choose_word(possible_words, previous_guesses)
+    
+    # First step to set the first word
+    if attempts == 1: guess = "crane"
+    
     feedback = []
     while True:
         try:
@@ -78,5 +82,3 @@ while True:
     if feedback.count("🟩") == 5:
         print(f"Congratulations! The word was '{guess}'. It took {attempts} attempts to guess.")
         break
-
-print("Game over!")
