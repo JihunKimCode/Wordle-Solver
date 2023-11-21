@@ -1,7 +1,7 @@
 import random
 
 # Load the list of possible words from the file
-with open('Dataset/All_possible_words.txt', 'r') as file:
+with open('Dataset/reduced_possible_words.txt', 'r') as file:
     possible_words = [line.strip() for line in file]
 
 # Function to generate a random word from the list of possible words
@@ -54,7 +54,7 @@ while True:
     guess = bayesian_choose_word(possible_words, previous_guesses)
     
     # First step to set the first word
-    if attempts == 1: guess = "crane"
+    # if attempts == 1: guess = "crane"
     
     feedback = []
     while True:
