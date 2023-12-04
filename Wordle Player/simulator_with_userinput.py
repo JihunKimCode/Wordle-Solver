@@ -54,7 +54,7 @@ while True:
     guess = bayesian_choose_word(possible_words, previous_guesses)
     
     # First step to set the first word
-    # if attempts == 1: guess = "crane"
+    if attempts == 1: guess = "crane"
     
     feedback = []
     while True:
