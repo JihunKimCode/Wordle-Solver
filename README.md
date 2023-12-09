@@ -5,7 +5,7 @@ Using Bayesian Algorithm, make a model to play [Wordle](https://www.nytimes.com/
 ## Dataset
 - **Training dataset**: [All possible words that have 5 characters that Wordle takes](https://github.com/3b1b/videos/blob/master/_2022/wordle/data/possible_words.txt)
 - **Testing dataset**: [Previous Wordle answers](https://www.fiveforks.com/wordle/)
-- **Algorithm**: We will start with using the Bayesian model but we also consider combining other algorithms if necessary
+- **Algorithm**: Bayesian algorithm
 
 ## Main Goal
 1. Random guess from list (whole word list).
